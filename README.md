@@ -12,16 +12,24 @@ The reason of not using PySpark dataframe is because the broadcast values of pyt
 # Customise dictionary
 There are in total five dictionaries used in this project:
 1. substance name
+   
 2. CAS(Chemical Abstract Society) number
+   
 3. chemical formula
+   
 4. opsin (module to convert IUPAC to InChIKey, refer opsin.py)
+   
 5. entity
 
 There's a script for generating dictionaries for normalisation(dict_gen.py) into pickle format. 
 
 # Other scripts:
 algo_conv : to parse chemical formula written in HTML format
+
 multiproc : multiprocessing for normalisation and dictionary loading steps
+
 util_module: general functions including spark initialization, copying data from AWS S3 to local machines.
+
 opsin: parse IUPAC to InChIKey
+
 conversion_gzip_parquet: convert gzip files to parquet files
